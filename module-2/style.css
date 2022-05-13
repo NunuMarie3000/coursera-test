@@ -1,3 +1,155 @@
-.blue-text{
-	font-size: 60px;
+h1{
+	text-align: center;
+}
+
+p{
+	margin-top: 3px;
+}
+
+#chicken-container{
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 1.5%;
+}
+
+#beef-container{
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 1.5%;
+}
+
+#sushi-container{
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 1.5%;
+}
+
+@media screen and (min-width: 767px){
+	#chicken-container{
+	background-color: lightslategrey;
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	}
+
+	#beef-container{
+	background-color: lightslategrey;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	}
+
+	#sushi-container{
+	background-color: lightslategrey;
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#chicken-container{
+	background-color: lightslategrey;
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	}
+
+	#beef-container{
+	background-color: lightslategrey;
+	grid-column-start: 4;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	}
+
+	#sushi-container{
+	background-color: lightslategrey;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#chicken-container{
+	background-color: lightslategrey;
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	}
+
+	#beef-container{
+	background-color: lightslategrey;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	}
+
+	#sushi-container{
+	background-color: lightslategrey;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	}
+}
+
+#trio-container{
+	display: grid;
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+}
+
+#chicken{
+	background-color: lightpink;
+	width: 100px;
+	height: 25px;
+	box-sizing: border-box;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border-width: 2px;
+	border-style: none none solid solid;
+	border-color: black;
+}
+
+#beef{
+	background-color: darkred;
+	width: 100px;
+	height: 25px;
+	box-sizing: border-box;
+	justify-content: right;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border-width: 2px;
+	border-style: none none solid solid;
+	border-color: black;
+}
+
+#sushi{
+	background-color: lightyellow;
+	width: 100px;
+	height: 25px;
+	box-sizing: border-box;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border-width: 2px;
+	border-style: none none solid solid;
+	border-color: black;
 }
